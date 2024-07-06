@@ -4,7 +4,7 @@ import music21 as m21
 from tensorflow import keras
 import numpy as np
 
-DATASET_PATH = './europa/deutschl/test'
+DATASET_PATH = './europa/deutschl/erk'
 SAVE_DIR = './dataset'
 SINGLE_FILE_DATASET = './single-file-dataset.txt'
 MAPPING_PATH = './mapping.json'
