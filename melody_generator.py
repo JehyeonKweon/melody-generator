@@ -105,9 +105,9 @@ class MelodyGenerator:
 
 if __name__ == '__main__':
     mg = MelodyGenerator()
-    seeds = ['65 - - - - - 65 - 64 - 64 - 69 - 67 - 67 - -',
-             '67 - 66 - 67 - 69 - 67 - 62 - 62 - 62 - 67 - 66 - 67 - 69 - 67',
-             '72 - - - 69 -']
+    seeds = ['62 - 64 - - - 65 - -',
+             '55 55 - 57 - - 55 55 - 52 - 52 - 52 - 55 - - 50 50',
+             '67 - - - 67 - - - - 69']
     for i, seed in enumerate(seeds):
         melody = mg.generate_melody(seed, 500, SEQUENCE_LENGTH, 0.8)
         mg.save_melody(melody, file_name=f'./generated_melody/melody{i+1}.midi')

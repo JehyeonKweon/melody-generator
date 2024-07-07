@@ -4,7 +4,7 @@ import music21 as m21
 from tensorflow import keras
 import numpy as np
 
-DATASET_PATH = './europa/deutschl/erk'
+DATASET_PATH = './europa/deutschl/fink'
 SAVE_DIR = './dataset'
 SINGLE_FILE_DATASET = './single-file-dataset.txt'
 MAPPING_PATH = './mapping.json'
@@ -66,7 +66,7 @@ def transpose(song):
 
 
 def encoding_song(song, time_step=0.25):
-    # pitch = 60, duration = 1.0 -> [60, '-', '-', '-']
+    # pitch = 60, duration = 1.0 -> [60, '-', '-', '64']
     encoded_song = []
 
     for event in song.flatten().notesAndRests:

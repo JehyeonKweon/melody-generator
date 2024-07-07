@@ -2,7 +2,7 @@ from tensorflow import keras
 from preprocess import generate_training_sequences, SEQUENCE_LENGTH
 
 
-OUTPUT_UNIT = 38
+OUTPUT_UNIT = 42
 NUM_UNITS = [256]
 LOSS = 'sparse_categorical_crossentropy'
 LEARNING_RATE = 0.001
